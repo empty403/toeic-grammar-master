@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOEIC Conjunctions & Prepositions - Full Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f0e17;
+        --surface: #1a1828;
+        --surface-2: #221f35;
+        --border: rgba(255,255,255,0.07);
+        --indigo: #818cf8;
+        --amber: #fbbf24;
+        --emerald: #34d399;
+        --text: #e2e0f0;
+        --muted: #7c7a99;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        scroll-behavior: smooth;
+      }
+
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: var(--bg); }
+      ::-webkit-scrollbar-thumb { background: #3b3760; border-radius: 99px; }
+
+      /* Header decorative orbs */
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.25;
+        pointer-events: none;
+      }
+
+      /* Sticky section title */
+      .section-title {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: linear-gradient(to bottom, var(--bg) 80%, transparent);
+        padding-bottom: 1rem;
+      }
+
+      /* Card hover */
+      .card-hover {
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 0 1px rgba(129,140,248,0.3), 0 20px 40px rgba(0,0,0,0.4);
+        border-color: rgba(129,140,248,0.3) !important;
+      }
+
+      /* Grammar tags */
+      .grammar-tag {
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 9999px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .tag-conj {
+        background: rgba(129,140,248,0.15);
+        color: #a5b4fc;
+        border: 1px solid rgba(129,140,248,0.3);
+      }
+      .tag-prep {
+        background: rgba(251,191,36,0.12);
+        color: #fcd34d;
+        border: 1px solid rgba(251,191,36,0.25);
+      }
+      .tag-adv {
+        background: rgba(52,211,153,0.12);
+        color: #6ee7b7;
+        border: 1px solid rgba(52,211,153,0.25);
+      }
+
+      /* Search glow */
+      #searchInput:focus {
+        box-shadow: none;
+      }
+      #searchInput:focus + * ,
+      .search-wrap:focus-within {
+        border-color: rgba(129,140,248,0.8) !important;
+        box-shadow: 0 0 0 1px rgba(129,140,248,0.3), 0 8px 40px rgba(99,102,241,0.35) !important;
+      }
+
+      /* Card accent border */
+      .accent-conj { border-left: 3px solid rgba(129,140,248,0.5); }
+      .accent-prep { border-left: 3px solid rgba(251,191,36,0.5); }
+      .accent-adv  { border-left: 3px solid rgba(52,211,153,0.5); }
+
+      /* Shimmer on section number badge */
+      .num-badge {
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        font-size: 0.875rem;
+        font-weight: 800;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 0 0 16px rgba(99,102,241,0.4);
+      }
+
+      /* Gradient text utility */
+      .gradient-text {
+        background: linear-gradient(135deg, #a5b4fc, #c4b5fd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Example block */
+      .example-block {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid var(--border);
+        border-radius: 0.875rem;
+        padding: 0.875rem 1rem;
+      }
+
+      /* Divider line */
+      .section-divider {
+        height: 2px;
+        background: linear-gradient(to right, #6366f1, transparent);
+        border-radius: 9999px;
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="relative overflow-hidden py-24 px-4 text-center" style="background: linear-gradient(160deg, #0d0c1d 0%, #131126 50%, #0f0e17 100%);">
+      <!-- Decorative orbs -->
+      <div class="orb" style="width:420px;height:420px;background:#6366f1;top:-120px;left:-80px;"></div>
+      <div class="orb" style="width:300px;height:300px;background:#8b5cf6;bottom:-80px;right:-60px;"></div>
+      <!-- Grid pattern overlay -->
+      <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);background-size:32px 32px;pointer-events:none;"></div>
+
+      <div class="relative max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-sm font-semibold text-indigo-300 uppercase tracking-widest mb-6">
+          <span style="width:6px;height:6px;background:#818cf8;border-radius:50%;display:inline-block;box-shadow:0 0 6px #818cf8;"></span>
+          TOEIC Part 5 &amp; 6
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tighter" style="line-height:1.05;">
+          <span class="gradient-text">Grammar</span><br/>
+          <span class="text-white">Master</span>
+        </h1>
+        <p class="text-xl md:text-2xl font-light" style="color:var(--muted);">
+          Chinh phục Conjunctions &amp; Prepositions — từ nền tảng đến thực chiến
+        </p>
+
+        <!-- Stats row -->
+        <div class="flex justify-center gap-8 mt-10">
+          <div class="text-center">
+            <p class="text-3xl font-black text-white">8</p>
+            <p class="text-sm uppercase tracking-widest" style="color:var(--muted);">Nhóm từ</p>
+          </div>
+          <div style="width:1px;background:var(--border);"></div>
+          <div class="text-center">
+            <p class="text-3xl font-black text-white">60+</p>
+            <p class="text-sm uppercase tracking-widest" style="color:var(--muted);">Từ vựng</p>
+          </div>
+          <div style="width:1px;background:var(--border);"></div>
+          <div class="text-center">
+            <p class="text-3xl font-black text-white">3</p>
+            <p class="text-sm uppercase tracking-widest" style="color:var(--muted);">Loại từ</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 pb-28">
+
+      <!-- ═══════════════ SECTION 01 — Foundation ═══════════════ -->
+      <div class="mt-12 mb-6 rounded-3xl p-8 card-hover" style="background:var(--surface);border:1px solid var(--border);">
+        <h2 class="text-2xl font-black mb-6 flex items-center gap-3">
+          <span class="num-badge">01</span>
+          <span>Kiến thức nền tảng: <span class="gradient-text">Mệnh đề vs. Cụm danh từ</span></span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Clause -->
+          <div class="rounded-2xl p-5 space-y-3" style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);">
+            <div class="flex items-center gap-2">
+              <span style="width:10px;height:10px;background:#818cf8;border-radius:50%;flex-shrink:0;box-shadow:0 0 8px #818cf8;"></span>
+              <h3 class="font-bold text-lg uppercase tracking-widest" style="color:#a5b4fc;">Mệnh đề (Clause)</h3>
+            </div>
+            <p class="text-base" style="color:var(--muted);">Nhóm từ có đầy đủ <strong class="text-white">Chủ ngữ (S)</strong> và <strong class="text-white">Động từ chia thì (V)</strong>.</p>
+            <div class="example-block">
+              <p class="text-sm font-bold mb-2 uppercase tracking-wider" style="color:var(--muted);">Cấu trúc</p>
+              <code class="text-base font-mono" style="color:#a5b4fc;">S + V + (O)</code>
+              <div class="mt-3 space-y-1">
+                <p class="text-base italic" style="color:var(--text);">• "The weather <strong>was</strong> bad."</p>
+                <p class="text-base italic" style="color:var(--text);">• "It <strong>rained</strong> heavily."</p>
+              </div>
+            </div>
+          </div>
+          <!-- Noun Phrase -->
+          <div class="rounded-2xl p-5 space-y-3" style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.2);">
+            <div class="flex items-center gap-2">
+              <span style="width:10px;height:10px;background:#fbbf24;border-radius:50%;flex-shrink:0;box-shadow:0 0 8px #fbbf24;"></span>
+              <h3 class="font-bold text-lg uppercase tracking-widest" style="color:#fcd34d;">Cụm danh từ (Noun Phrase)</h3>
+            </div>
+            <p class="text-base" style="color:var(--muted);">Nhóm từ đóng vai trò danh từ, <strong class="text-white">không có động từ chia thì</strong>.</p>
+            <div class="example-block">
+              <p class="text-sm font-bold mb-2 uppercase tracking-wider" style="color:var(--muted);">Thành phần</p>
+              <code class="text-base font-mono" style="color:#fcd34d;">Adj + N / V-ing</code>
+              <div class="mt-3 space-y-1">
+                <p class="text-base italic" style="color:var(--text);">• "The <strong>bad weather</strong>."</p>
+                <p class="text-base italic" style="color:var(--text);">• "The <strong>heavy rain</strong>."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════ SECTION 02 — Word Types ═══════════════ -->
+      <div class="mb-12 rounded-3xl p-8 card-hover" style="background:var(--surface);border:1px solid var(--border);">
+        <h2 class="text-2xl font-black mb-6 flex items-center gap-3">
+          <span class="num-badge">02</span>
+          <span>Phân biệt: <span class="gradient-text">Liên từ, Giới từ &amp; Trạng từ</span></span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="rounded-2xl p-5 space-y-3" style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);">
+            <span class="grammar-tag tag-conj">Liên từ</span>
+            <p class="text-base leading-relaxed" style="color:var(--muted);">Nối 2 mệnh đề trong 1 câu duy nhất.</p>
+            <div class="pt-2 border-t" style="border-color:var(--border);">
+              <p class="text-sm" style="color:var(--muted);">Sau luôn là <strong class="text-white">Mệnh đề (S + V)</strong>.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl p-5 space-y-3" style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.2);">
+            <span class="grammar-tag tag-prep">Giới từ</span>
+            <p class="text-base leading-relaxed" style="color:var(--muted);">Kết nối danh từ/V-ing với các thành phần khác.</p>
+            <div class="pt-2 border-t" style="border-color:var(--border);">
+              <p class="text-sm" style="color:var(--muted);">Sau là <strong class="text-white">Cụm danh từ</strong> hoặc <strong class="text-white">V-ing</strong>.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl p-5 space-y-3" style="background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.2);">
+            <span class="grammar-tag tag-adv">Trạng từ liên kết</span>
+            <p class="text-base leading-relaxed" style="color:var(--muted);">Nối 2 câu độc lập về mặt ý nghĩa.</p>
+            <div class="pt-2 border-t" style="border-color:var(--border);">
+              <p class="text-sm" style="color:var(--muted);">Đứng giữa <strong class="text-white">(;)</strong> và <strong class="text-white">(,)</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════ SEARCH BAR ═══════════════ -->
+      <div class="sticky top-4 z-50 mb-14">
+        <!-- glow backdrop -->
+        <div style="position:absolute;inset:-6px;border-radius:1.75rem;background:linear-gradient(135deg,rgba(99,102,241,0.35),rgba(139,92,246,0.25));filter:blur(14px);pointer-events:none;"></div>
+        <div class="search-wrap relative rounded-2xl" style="background:var(--surface-2);border:1.5px solid rgba(129,140,248,0.5);box-shadow:0 0 0 1px rgba(129,140,248,0.15),0 8px 32px rgba(99,102,241,0.2);">
+          <!-- search icon -->
+          <svg class="absolute left-5 top-1/2 -translate-y-1/2 pointer-events-none" width="20" height="20" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Tìm nhanh… (as though, despite, because…)"
+            class="w-full pl-14 pr-28 py-4 rounded-2xl text-lg font-medium transition-all focus:outline-none"
+            style="background:transparent;color:var(--text);"
+          />
+          <!-- kbd hint -->
+          <div class="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-1 pointer-events-none">
+            <span style="font-size:0.7rem;font-weight:600;color:var(--muted);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:2px 7px;border-radius:6px;">Tìm kiếm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════ DYNAMIC CONTENT ═══════════════ -->
+      <div id="contentContainer" class="space-y-20"></div>
+
+      <!-- ═══════════════ PRACTICAL TIPS ═══════════════ -->
+      <div class="mt-24 rounded-3xl p-8 md:p-12 relative overflow-hidden" style="background:linear-gradient(135deg,#1a1535 0%,#201c42 100%);border:1px solid rgba(99,102,241,0.25);">
+        <!-- Glow accent -->
+        <div style="position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:#6366f1;border-radius:50%;filter:blur(90px);opacity:0.15;pointer-events:none;"></div>
+
+        <div class="flex items-center gap-3 mb-8">
+          <div style="width:3px;height:2rem;background:linear-gradient(to bottom,#818cf8,#c4b5fd);border-radius:9999px;"></div>
+          <h2 class="text-3xl font-black">Bí kíp thực chiến <span class="gradient-text">Part 5 &amp; 6</span></h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="rounded-2xl p-5 space-y-2" style="background:rgba(255,255,255,0.04);border:1px solid var(--border);">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-sm font-black px-2 py-1 rounded-md" style="background:rgba(129,140,248,0.2);color:#a5b4fc;">TIP 01</span>
+              <h3 class="font-bold text-white">Kiểm tra dấu câu</h3>
+            </div>
+            <p class="text-base leading-relaxed" style="color:var(--muted);">
+              Thấy <strong class="text-white">dấu chấm phẩy (;)</strong> phía trước và <strong class="text-white">dấu phẩy (,)</strong> phía sau
+              → Ưu tiên <strong style="color:#a5b4fc;">Trạng từ liên kết</strong> (However, Therefore, Moreover…).
+            </p>
+          </div>
+          <div class="rounded-2xl p-5 space-y-2" style="background:rgba(255,255,255,0.04);border:1px solid var(--border);">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-sm font-black px-2 py-1 rounded-md" style="background:rgba(52,211,153,0.15);color:#6ee7b7;">TIP 02</span>
+              <h3 class="font-bold text-white">Nhìn sau chỗ trống</h3>
+            </div>
+            <p class="text-base leading-relaxed" style="color:var(--muted);">
+              Có <strong class="text-white">động từ chia thì</strong> không?<br/>
+              — Có <span class="font-mono text-sm" style="color:#a5b4fc;">(S+V)</span>: Chọn <strong style="color:#a5b4fc;">Liên từ</strong>.<br/>
+              — Không <span class="font-mono text-sm" style="color:#fcd34d;">(Noun/V-ing)</span>: Chọn <strong style="color:#fcd34d;">Giới từ</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script>
+      const sections = [
+        {
+          title: "Nhóm Tương phản & Nhượng bộ",
+          subtitle: "Contrast",
+          description: "Nối các ý trái ngược hoặc bổ sung thông tin gây bất ngờ.",
+          color: "#818cf8",
+          items: [
+            {
+              word: "Although / Even though / Though",
+              type: "conj",
+              meaning: "Mặc dù",
+              usage: "+ Mệnh đề. Even though mang nghĩa mạnh nhất.",
+              examples: ["Although the flight was delayed, he arrived on time."],
+            },
+            {
+              word: "Despite / In spite of",
+              type: "prep",
+              meaning: "Mặc dù / Bất chấp",
+              usage: "+ Cụm Noun / V-ing. Không dùng mệnh đề.",
+              examples: ["Despite the heavy rain, the match was not cancelled."],
+            },
+            {
+              word: "Notwithstanding",
+              type: "prep",
+              meaning: "Mặc dù / Tuy nhiên",
+              usage: "Trang trọng. Có thể đứng trước hoặc sau danh từ.",
+              examples: ["Notwithstanding the objections, the plan proceeded."],
+            },
+            {
+              word: "While / Whereas",
+              type: "conj",
+              meaning: "Trong khi / Ngược lại",
+              usage: "+ Mệnh đề. So sánh trực tiếp 2 vế đối lập.",
+              examples: ["I prefer tea, whereas my husband prefers coffee."],
+            },
+            {
+              word: "However / Nevertheless / Nonetheless",
+              type: "adv",
+              meaning: "Tuy nhiên / Dẫu vậy",
+              usage: "Nối 2 câu độc lập. Thường đứng sau dấu chấm/chấm phẩy.",
+              examples: ["The budget is tight; however, we will hire him."],
+            },
+            {
+              word: "Conversely / In contrast / On the other hand",
+              type: "adv",
+              meaning: "Ngược lại / Trái lại / Mặt khác",
+              usage: "Nối 2 câu độc lập, nhấn mạnh sự đối lập trực tiếp.",
+              examples: ["Sales rose in Q1; conversely, they dropped sharply in Q2."],
+            },
+            {
+              word: "Instead",
+              type: "adv",
+              meaning: "Thay vào đó",
+              usage: "Đề xuất hành động/lựa chọn thay thế cho điều vừa nêu.",
+              examples: ["He did not attend the conference; instead, he sent a representative."],
+            },
+            {
+              word: "Regardless of / Irrespective of",
+              type: "prep",
+              meaning: "Bất kể / Dù cho",
+              usage: "+ Noun / V-ing. Nhấn mạnh điều kiện không ảnh hưởng đến kết quả.",
+              examples: ["Regardless of the cost, the project must be completed on time."],
+            },
+          ],
+        },
+        {
+          title: "Nhóm Nguyên nhân & Kết quả",
+          subtitle: "Cause & Effect",
+          description: "Giải thích lý do hoặc đưa ra kết luận logic.",
+          color: "#fbbf24",
+          items: [
+            {
+              word: "Because / Since / As / Now that",
+              type: "conj",
+              meaning: "Bởi vì / Vì giờ đây",
+              usage: "+ Mệnh đề. Now that dùng cho nguyên nhân mới phát sinh.",
+              examples: ["Since the weather is bad, we stayed home."],
+            },
+            {
+              word: "Because of / Due to / Owing to",
+              type: "prep",
+              meaning: "Vì / Do",
+              usage: "+ Cụm Noun / V-ing.",
+              examples: ["The flight was cancelled due to heavy fog."],
+            },
+            {
+              word: "On account of / Thanks to",
+              type: "prep",
+              meaning: "Vì / Nhờ có",
+              usage: "+ Noun / V-ing. Thanks to mang sắc thái tích cực.",
+              examples: ["Thanks to his effort, the team met the deadline.", "On account of the delay, the client requested a refund."],
+            },
+            {
+              word: "Therefore / Consequently",
+              type: "adv",
+              meaning: "Do đó / Kết quả là",
+              usage: "Chỉ kết quả tất yếu. Thường đứng đầu câu thứ hai.",
+              examples: ["He was late; consequently, he missed the meeting."],
+            },
+            {
+              word: "Thus / Hence / Accordingly",
+              type: "adv",
+              meaning: "Như vậy / Do đó / Theo đó",
+              usage: "Văn phong trang trọng. Hay gặp trong báo cáo và hợp đồng.",
+              examples: ["The report was incomplete; thus, the meeting was postponed.", "Demand has increased; accordingly, we will expand production."],
+            },
+            {
+              word: "As a result / Thereby",
+              type: "adv",
+              meaning: "Kết quả là / Qua đó",
+              usage: "As a result đứng đầu câu; Thereby thường đứng giữa câu.",
+              examples: ["The system was upgraded, thereby improving overall performance.", "As a result of the merger, 200 new jobs were created."],
+            },
+            {
+              word: "So",
+              type: "conj",
+              meaning: "Vì thế",
+              usage: "Nối 2 mệnh đề, đứng giữa câu.",
+              examples: ["I was hungry, so I bought a snack."],
+            },
+          ],
+        },
+        {
+          title: "Nhóm Điều kiện & Cách thức",
+          subtitle: "Condition & Manner",
+          description: "Các tình huống giả định hoặc phương thức thực hiện.",
+          color: "#34d399",
+          items: [
+            {
+              word: "As if / As though",
+              type: "conj",
+              meaning: "Cứ như thể là",
+              usage: "+ Mệnh đề. Mô tả tình huống giả định hoặc cách thức.",
+              examples: [
+                "He speaks as though he knew the secret.",
+                "She acted as if nothing had happened.",
+              ],
+            },
+            {
+              word: "If / Unless",
+              type: "conj",
+              meaning: "Nếu / Trừ khi",
+              usage: "+ Mệnh đề. Unless = If not.",
+              examples: ["Unless you hurry, you will miss the train."],
+            },
+            {
+              word: "Provided that / As long as",
+              type: "conj",
+              meaning: "Miễn là",
+              usage: "Điều kiện bắt buộc (thường dùng trong hợp đồng).",
+              examples: ["You can join as long as you pay the fee."],
+            },
+            {
+              word: "In case",
+              type: "conj",
+              meaning: "Phòng khi",
+              usage: "+ Mệnh đề. Chuẩn bị cho tình huống có thể xảy ra.",
+              examples: ["Take a coat in case it gets cold."],
+            },
+          ],
+        },
+        {
+          title: "Nhóm Mục đích",
+          subtitle: "Purpose",
+          description: "Giải thích mục đích của hành động.",
+          color: "#c4b5fd",
+          items: [
+            {
+              word: "So that / In order that",
+              type: "conj",
+              meaning: "Để mà",
+              usage: "+ Mệnh đề (thường có can/could/will/would).",
+              examples: [
+                "He works hard so that he can support his family.",
+                "In order that the project succeeds, we need teamwork.",
+              ],
+            },
+            {
+              word: "In order to / So as to",
+              type: "prep",
+              meaning: "Để làm gì",
+              usage: "+ Động từ nguyên mẫu (V-bare).",
+              examples: ["She left early in order to catch the train."],
+            },
+          ],
+        },
+        {
+          title: "Nhóm Bổ sung",
+          subtitle: "Addition",
+          description: "Thêm thông tin cùng chiều hoặc bổ sung ý tưởng.",
+          color: "#fb923c",
+          items: [
+            {
+              word: "Moreover / Furthermore / In addition",
+              type: "adv",
+              meaning: "Hơn nữa / Thêm vào đó",
+              usage: "Bổ sung thông tin quan trọng hơn ý trước.",
+              examples: ["The hotel is cheap; moreover, it is centrally located."],
+            },
+            {
+              word: "Additionally / Besides / Also",
+              type: "adv",
+              meaning: "Ngoài ra / Bên cạnh đó / Cũng",
+              usage: "Also thường đứng giữa câu; Besides và Additionally đứng đầu câu.",
+              examples: ["The product is durable; additionally, it comes with a 2-year warranty."],
+            },
+            {
+              word: "Likewise / Similarly",
+              type: "adv",
+              meaning: "Tương tự vậy / Tương tự",
+              usage: "So sánh hành động/tình huống tương đồng giữa 2 vế.",
+              examples: ["The manager approved the plan; likewise, the director gave her consent."],
+            },
+            {
+              word: "Otherwise",
+              type: "adv",
+              meaning: "Nếu không thì",
+              usage: "Chỉ hậu quả nếu không thực hiện điều vừa nêu.",
+              examples: ["You must submit the form today; otherwise, your application will be rejected."],
+            },
+            {
+              word: "Alternatively",
+              type: "adv",
+              meaning: "Hoặc thay vào đó",
+              usage: "Đề xuất lựa chọn thay thế khả thi.",
+              examples: ["You can submit the form online; alternatively, mail it to our office."],
+            },
+            {
+              word: "For example / For instance / Namely",
+              type: "adv",
+              meaning: "Ví dụ / Cụ thể là",
+              usage: "Giới thiệu ví dụ minh họa. Namely liệt kê cụ thể hơn.",
+              examples: ["Several issues caused the delay; for instance, bad weather and supply shortages."],
+            },
+            {
+              word: "Subsequently / Meanwhile / Finally",
+              type: "adv",
+              meaning: "Tiếp theo / Trong khi đó / Cuối cùng",
+              usage: "Diễn đạt trình tự hoặc sự đồng thời của các sự kiện.",
+              examples: [
+                "The contract was signed; subsequently, production began.",
+                "The team worked on the report; meanwhile, the client prepared questions.",
+              ],
+            },
+          ],
+        },
+        {
+          title: "Nhóm Thời gian",
+          subtitle: "Time",
+          description: "Xác định thời điểm, thứ tự hoặc khoảng thời gian diễn ra sự việc.",
+          color: "#38bdf8",
+          items: [
+            {
+              word: "After / Before",
+              type: "conj",
+              meaning: "Sau khi / Trước khi",
+              usage: "+ Mệnh đề (S+V). Xác định thứ tự trước-sau của sự kiện.",
+              examples: [
+                "Please review the document before you sign it.",
+                "After the meeting ended, she sent a summary email.",
+              ],
+            },
+            {
+              word: "When / Whenever",
+              type: "conj",
+              meaning: "Khi / Bất cứ khi nào",
+              usage: "When: thời điểm cụ thể. Whenever: bất kỳ lần nào.",
+              examples: ["Please call us whenever you have any questions."],
+            },
+            {
+              word: "Until / Till",
+              type: "conj",
+              meaning: "Cho đến khi",
+              usage: "+ Mệnh đề. Hành động tiếp diễn tới một mốc thời gian.",
+              examples: ["The office will remain open until the renovation is complete."],
+            },
+            {
+              word: "As soon as / By the time",
+              type: "conj",
+              meaning: "Ngay khi / Vào lúc mà",
+              usage: "As soon as: ngay lập tức. By the time: trước một thời điểm xác định.",
+              examples: [
+                "As soon as the order is confirmed, we will ship it.",
+                "By the time he arrived, the meeting had already started.",
+              ],
+            },
+            {
+              word: "Once",
+              type: "conj",
+              meaning: "Một khi / Ngay khi",
+              usage: "+ Mệnh đề. Chỉ hành động sẽ xảy ra ngay sau khi hoàn tất điều kiện.",
+              examples: ["Once you submit the form, you will receive a confirmation email."],
+            },
+            {
+              word: "Prior to / Following",
+              type: "prep",
+              meaning: "Trước khi / Sau khi",
+              usage: "+ Noun / V-ing. Dùng trong văn phong trang trọng.",
+              examples: ["Prior to the meeting, please review all attached files."],
+            },
+            {
+              word: "During / Throughout",
+              type: "prep",
+              meaning: "Trong suốt / Suốt toàn bộ",
+              usage: "+ Noun. During: trong khoảng thời gian đó. Throughout: toàn bộ thời gian.",
+              examples: [
+                "No calls are allowed during the examination.",
+                "The store remained open throughout the holiday season.",
+              ],
+            },
+            {
+              word: "Upon",
+              type: "prep",
+              meaning: "Ngay khi / Vào lúc",
+              usage: "+ V-ing. Rất trang trọng, hay gặp trong hợp đồng và thông báo TOEIC.",
+              examples: ["Upon receiving the invoice, please process the payment immediately."],
+            },
+          ],
+        },
+        {
+          title: "Liên từ kết hợp",
+          subtitle: "Coordinating — FANBOYS",
+          description: "Nối 2 từ, cụm từ hoặc mệnh đề có tầm quan trọng ngang nhau.",
+          color: "#f472b6",
+          items: [
+            {
+              word: "And",
+              type: "conj",
+              meaning: "Và / Và thêm nữa",
+              usage: "Nối 2 thành phần cùng loại (N+N, V+V, clause+clause).",
+              examples: ["The manager and the director attended the conference."],
+            },
+            {
+              word: "But",
+              type: "conj",
+              meaning: "Nhưng",
+              usage: "Nối 2 ý đối lập nhau.",
+              examples: ["The product is expensive, but it is extremely durable."],
+            },
+            {
+              word: "Or / Nor",
+              type: "conj",
+              meaning: "Hoặc / Cũng không",
+              usage: "Or: lựa chọn. Nor: phủ định bổ sung, thường đi sau Neither.",
+              examples: [
+                "You can call or email our support team.",
+                "He neither confirmed nor denied the allegations.",
+              ],
+            },
+            {
+              word: "Yet",
+              type: "conj",
+              meaning: "Thế nhưng / Tuy nhiên",
+              usage: "= But nhưng trang trọng hơn. Luôn đứng giữa 2 mệnh đề.",
+              examples: ["The task was challenging, yet the team completed it ahead of schedule."],
+            },
+            {
+              word: "For",
+              type: "conj",
+              meaning: "Vì / Bởi vì",
+              usage: "= Because, rất trang trọng. Chỉ dùng nối 2 mệnh đề độc lập.",
+              examples: ["He left the office early, for he had a flight to catch."],
+            },
+          ],
+        },
+        {
+          title: "Liên từ tương quan",
+          subtitle: "Correlative Conjunctions",
+          description: "Luôn xuất hiện thành cặp cố định, nối 2 thành phần song song.",
+          color: "#a3e635",
+          items: [
+            {
+              word: "Both ... and",
+              type: "conj",
+              meaning: "Cả ... lẫn",
+              usage: "Nhấn mạnh cả 2 yếu tố đều đúng. Động từ chia số nhiều.",
+              examples: ["Both the CEO and the CFO signed the agreement."],
+            },
+            {
+              word: "Either ... or",
+              type: "conj",
+              meaning: "Hoặc ... hoặc",
+              usage: "Lựa chọn 1 trong 2. Động từ chia theo danh từ đứng sau 'or'.",
+              examples: ["Either the manager or the assistants are responsible for this task."],
+            },
+            {
+              word: "Neither ... nor",
+              type: "conj",
+              meaning: "Không ... cũng không",
+              usage: "Phủ định cả 2. Động từ chia theo danh từ đứng sau 'nor'.",
+              examples: ["Neither the price nor the delivery terms were acceptable."],
+            },
+            {
+              word: "Not only ... but also",
+              type: "conj",
+              meaning: "Không chỉ ... mà còn",
+              usage: "Nhấn mạnh bổ sung. Đảo ngữ khi 'Not only' đứng đầu câu.",
+              examples: [
+                "She is not only talented but also incredibly hardworking.",
+                "Not only did he finish early, but he also helped his colleagues.",
+              ],
+            },
+            {
+              word: "Whether ... or",
+              type: "conj",
+              meaning: "Dù ... hay / Có ... hay không",
+              usage: "+ Mệnh đề. Diễn đạt sự không chắc chắn hoặc đưa ra 2 khả năng.",
+              examples: ["Whether you agree or not, the decision has already been made."],
+            },
+          ],
+        },
+      ];
+
+      function getTypeClass(type) {
+        if (type === "conj") return "tag-conj";
+        if (type === "prep") return "tag-prep";
+        return "tag-adv";
+      }
+      function getAccentClass(type) {
+        if (type === "conj") return "accent-conj";
+        if (type === "prep") return "accent-prep";
+        return "accent-adv";
+      }
+      function getTypeName(type) {
+        if (type === "conj") return "Liên từ";
+        if (type === "prep") return "Giới từ";
+        return "Trạng từ";
+      }
+
+      function render() {
+        const container = document.getElementById("contentContainer");
+        const search = document.getElementById("searchInput").value.toLowerCase();
+        container.innerHTML = "";
+
+        sections.forEach((section) => {
+          const filteredItems = section.items.filter(
+            (i) =>
+              i.word.toLowerCase().includes(search) ||
+              i.meaning.toLowerCase().includes(search)
+          );
+          if (filteredItems.length === 0) return;
+
+          const sectionEl = document.createElement("section");
+
+          sectionEl.innerHTML = `
+            <div class="section-title pt-2">
+              <div class="flex items-end gap-4 mb-1">
+                <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">${section.title}</h2>
+                <span class="text-base font-semibold mb-0.5 pb-1" style="color:${section.color};opacity:0.7;letter-spacing:0.04em;">${section.subtitle}</span>
+              </div>
+              <p class="text-base mb-3" style="color:var(--muted);">${section.description}</p>
+              <div style="height:2px;background:linear-gradient(to right,${section.color},transparent);border-radius:9999px;"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+              ${filteredItems.map((item) => `
+                <div class="rounded-2xl p-5 card-hover ${getAccentClass(item.type)}"
+                     style="background:var(--surface);border:1px solid var(--border);">
+                  <div class="flex justify-between items-start mb-3 gap-2">
+                    <h3 class="text-lg font-bold leading-snug" style="color:${section.color};">${item.word}</h3>
+                    <span class="grammar-tag ${getTypeClass(item.type)} flex-shrink-0">${getTypeName(item.type)}</span>
+                  </div>
+
+                  <div class="mb-4 space-y-1">
+                    <p class="text-base font-semibold text-white">${item.meaning}</p>
+                    <p class="text-sm leading-relaxed" style="color:var(--muted);"><strong class="font-semibold" style="color:#9ca3af;">Cấu trúc:</strong> ${item.usage}</p>
+                  </div>
+
+                  <div class="example-block">
+                    <p class="text-sm font-bold uppercase tracking-wider mb-2" style="color:var(--muted);">Ví dụ</p>
+                    ${item.examples.map((ex) =>
+                      `<p class="text-base italic leading-relaxed" style="color:#c4c3d8;">• "${ex}"</p>`
+                    ).join("")}
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          `;
+
+          container.appendChild(sectionEl);
+        });
+
+        if (container.innerHTML === "") {
+          container.innerHTML = `
+            <div class="text-center py-24">
+              <p class="text-5xl mb-4">🔍</p>
+              <p class="text-xl font-semibold text-white">Không tìm thấy kết quả</p>
+              <p class="text-base mt-1" style="color:var(--muted);">cho "<span style="color:#a5b4fc;">${search}</span>"</p>
+            </div>
+          `;
+        }
+      }
+
+      document.getElementById("searchInput").addEventListener("input", render);
+      render();
+    </script>
+  </body>
+</html>
